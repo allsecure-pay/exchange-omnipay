@@ -1,0 +1,46 @@
+{
+    "name": "allsecure-pay/exchange-omnipay",
+    "type": "library",
+    "description": "AllSecure Exchange driver for the Omnipay payment processing library",
+    "keywords": [
+        "allsecure",
+        "gateway",
+        "merchant",
+        "omnipay",
+        "pay",
+        "payment"
+    ],
+    "homepage": "https://github.com/allsecure-pay/exchange-omnipay",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "AllSecure",
+            "email": "support@allsecure.eu"
+        },
+        {
+            "name": "AllSecure Dev",
+            "email": "dev@allsecure.eu"
+        },
+        {
+            "name": "Omnipay Contributors",
+            "homepage": "https://github.com/allsecure-pay/exchange-omnipay/contributors"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Omnipay\\AllsecureExchange\\" : "src/"
+        }
+    },
+    "require": {
+        "omnipay/common": "^3"
+    },
+    "require-dev": {
+        "omnipay/tests": "^3"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    },
+    "minimum-stability": "dev"
+}
