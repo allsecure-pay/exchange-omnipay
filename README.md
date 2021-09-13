@@ -60,7 +60,7 @@ try {
     $card = new CreditCard($formData);
     
     $request = $gateway->purchase([
-        'amount' => '10.00', // this represents $10.00
+        'amount' => '10.00', // this represents €10.00
         'currency' => 'EUR',
         'card' => $card,
     ]);
@@ -116,8 +116,8 @@ try {
     $card = new CreditCard($formData);
     
     $request = $gateway->authorize([
-        'amount' => '10.00', // this represents $10.00
-        'currency' => 'AUD',
+        'amount' => '10.00', // this represents €10.00
+        'currency' => 'EUR',
         'card' => $card,
     ]);
     
@@ -171,8 +171,8 @@ try {
     $card = new CreditCard($formData);
     
     $request = $gateway->capture([
-        'amount' => '10.00', // this represents $10.00
-        'currency' => 'AUD',
+        'amount' => '10.00', // this represents €10.00
+        'currency' => 'EUR',
         'card' => $card,
         'referenceUuid' => 'bcdef23456bcdef23456', // UUID / transaction reference of a preauthorize
     ]);
@@ -223,8 +223,8 @@ try {
     $card = new CreditCard($formData);
     
     $request = $gateway->purchase([
-        'amount' => '10.00', // this represents $10.00
-        'currency' => 'AUD',
+        'amount' => '10.00', // this represents €10.00
+        'currency' => 'EUR',
         'card' => $card,
         'returnUrl' => 'https://www.example.com/return', // optional
     ]);
@@ -278,8 +278,8 @@ try {
     $card = new CreditCard($formData);
     
     $request = $gateway->authorize([
-        'amount' => '10.00', // this represents $10.00
-        'currency' => 'AUD',
+        'amount' => '10.00', // this represents €10.00
+        'currency' => 'EUR',
         'card' => $card,
         'returnUrl' => 'https://www.example.com/return', // optional
     ]);
@@ -330,8 +330,8 @@ Depending on the payment method you can even capture only a partial amount of th
 try {
 
     $request = $gateway->capture([
-        'amount' => '10.00', // this represents $10.00
-        'currency' => 'AUD',
+        'amount' => '10.00', // this represents €10.00
+        'currency' => 'EUR',
         'referenceUuid' => 'bcdef23456bcdef23456', // UUID / transaction reference of a preauthorize
     ]);
     
@@ -522,7 +522,7 @@ try {
 
     $request = $gateway->refund([
         'amount'                => '1.25',
-        'currency'              => 'AUD',
+        'currency'              => 'EUR',
         'referenceUuid'         => '48bbd15cdf9e5b81985d',
     ]);
     
@@ -581,7 +581,7 @@ For a successful responses, a reference will normally be generated, which can be
 ```php
 $response = $gateway->purchase([
     'amount' => '10.00', 
-    'currency' => 'AUD', 
+    'currency' => 'EUR', 
     'card' => $card
 ])->send();
 
@@ -601,7 +601,7 @@ After processing a payment, the cart should check whether the response requires 
 ```php
 $response = $gateway->purchase([
     'amount' => '10.00', 
-    'currency' => 'AUD', 
+    'currency' => 'EUR', 
     'card' => $card
 ])->send();
 
@@ -634,7 +634,7 @@ try {
 
     $request = $gateway->refund([
         'amount'                => '1.25',
-        'currency'              => 'AUD',
+        'currency'              => 'EUR',
         'referenceUuid'         => '48bbd15cdf9e5b81985d',
     ]);
     
