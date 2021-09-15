@@ -47,12 +47,12 @@ $gateway->initialize(array(
 ));
 ```
 
-**Remember!** You will have different **API Key** for different connectors
+**Note!** There will be different **API Key** for different payment channels
 
 
 ### Purchase Transaction
 
-This is called **Debit** on Allsecure Exchange Documentation
+**Debit** on Allsecure Exchange Documentation
 
 ```php
 try {
@@ -104,7 +104,7 @@ For more information about the card data, refer to: [Omnipay Credit Card Documen
 
 ### Authorize Transaction
 
-This is called **Preauthorize** on Allsecure Exchange Documentation
+**Preauthorize** in Allsecure Exchange Documentation
 
 A Preauthorize reserves the payment amount on the customer's payment instrument.
 
@@ -215,7 +215,7 @@ For more information about the card data, refer to: [Omnipay Credit Card Documen
 
 ### Purchase Transaction
 
-This is called **Debit** on Allsecure Exchange Documentation
+**Debit** in Allsecure Exchange Documentation
 
 ```php
 try {
@@ -266,7 +266,7 @@ For more information about the card data, refer to: [Omnipay Credit Card Documen
 
 ### Authorize Transaction
 
-This is called **Preauthorize** on Allsecure Exchange Documentation
+**Preauthorize** on Allsecure Exchange Documentation
 
 A Preauthorize reserves the payment amount on the customer's payment instrument.
 
@@ -414,7 +414,7 @@ For more information about the payload, refer to: [Allsecure Exchange Documentat
 
 ### Create Card Transaction
 
-This is called **Register** on Allsecure Exchange Documentation
+**Register** in Allsecure Exchange Documentation
 
 Registers a customer's payment instrument for future charges (Debits or Preauthorizations)
 
@@ -463,7 +463,7 @@ For more information about the card data, refer to: [Omnipay Credit Card Documen
 
 ### Delete Card Transaction
 
-This is called **Deregister** on Allsecure Exchange Documentation
+**Deregister** in Allsecure Exchange Documentation
 
 A Deregister deletes a previously registered payment instrument using Register.
 
