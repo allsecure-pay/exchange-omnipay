@@ -11,9 +11,9 @@ use Omnipay\AllsecureExchange\Message\AbstractTransactionRequest;
 class PurchaseRequest extends AbstractTransactionRequest
 {
 
-    protected $liveEndpoint = 'https://oppwa.com/v1/';
+    protected $liveEndpoint = 'https://eu-prod.oppwa.com/v1/';
 
-    protected $testEndpoint = 'https://test.oppwa.com/v1/';
+    protected $testEndpoint = 'https://eu-test.oppwa.com/v1/';
 
     /**
      * Get data for request payload

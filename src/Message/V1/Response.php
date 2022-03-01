@@ -43,7 +43,7 @@ class Response extends AbstractResponse
     {
         try {
             $httpClient = new Client();
-            $response = $httpClient->request('GET', 'https://test.oppwa.com/v1/resultcodes')->getBody()->getContents();
+            $response = $httpClient->request('GET', 'https://eu-test.oppwa.com/v1/resultcodes')->getBody()->getContents();
             $response = json_decode($response, true);
             foreach ($response['resultCodes'] as $item) {
                 if ($item['code'] == $this->getCode()) {

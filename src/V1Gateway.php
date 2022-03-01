@@ -66,8 +66,8 @@ use Omnipay\Common\Helper;
  *
  * The API has two endpoint host names:
  *
- * * https://oppwa.com/v1/payments/ (live)
- * * https://test.oppwa.com/v1/payments/ (test)
+ * * https://eu-prod.oppwa.com/v1/payments/ (live)
+ * * https://eu-test.oppwa.com/v1/payments/ (test)
  *
  * The live host is for processing live transactions, whereas the test
  * host can be used for integration testing and development.
