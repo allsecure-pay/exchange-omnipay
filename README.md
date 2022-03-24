@@ -5,7 +5,7 @@
 [Omnipay](https://github.com/thephpleague/omnipay) is a framework agnostic, multi-gateway payment
 processing library for PHP 5.3+. This package implements AllSecure support for Omnipay.
 
-[Allsecure Exchange](https://www.allsecure.eu/) was founded in 2005 with the primary focus of helping technology vendors and their customers streamline their payments acceptance and operations.
+[Allsecure](https://www.allsecure.eu/) was founded in 2005 with the primary focus of helping technology vendors and their customers streamline their payments acceptance and operations.
 
 ## Installation
 
